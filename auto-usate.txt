@@ -2,7 +2,7 @@ Tabella Auto Usate:
 
 Campi:
 
-id                      ==> BIGINT        ==> PK: NOT NULL, UNIQUE, AUTO_INCREMENT
+ID                      ==> BIGINT        ==> PK: NOT NULL, UNIQUE, AUTO_INCREMENT
 marca                   ==> VARCHAR(30)   ==> NOT NULL
 modello                 ==> VARCHAR(30)   ==> NOT NULL
 carrozzeria             ==> VARCHAR(50)   ==> NOT NULL
@@ -14,6 +14,6 @@ cambio                  ==> VARCHAR(30)   ==> NOT NULL
 trazione                ==> VARCHAR(30)   ==> NOT NULL
 data-immatricolazione   ==> DATE          ==> NOT NULL
 chilometri              ==> MEDIUMINT     ==> NOT NULL
-proprietari-precedenti  ==> TINYINT       ==> NULLABLE
-descrizione-e-note      ==> TEXT          ==> NULLABLE
+proprietari-precedenti  ==> TINYINT       ==> DEFAULT 'Sconosciuti'
+descrizione-e-note      ==> TEXT          ==> DEFAULT 'Nessuna descrizione per questa auto.'
 prezzo                  ==> SMALLINT      ==> NOT NULL
