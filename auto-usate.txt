@@ -5,13 +5,15 @@ Campi:
 id                      ==> BIGINT        ==> PK: NOT NULL, UNIQUE, AUTO_INCREMENT
 marca                   ==> VARCHAR(30)   ==> NOT NULL
 modello                 ==> VARCHAR(30)   ==> NOT NULL
-tipologia               ==> VARCHAR(50)   ==> NULLABLE
+carrozzeria             ==> VARCHAR(50)   ==> NOT NULL
 colore                  ==> VARCHAR(30)   ==> NOT NULL
 alimentazione           ==> VARCHAR(10)   ==> NOT NULL
 cilindrata              ==> SMALLINT      ==> NOT NULL
-cavalli                 ==> SMALLINT      ==> NULLABLE
-cambio                  ==> VARCHAR(30)   ==> NULLABLE
-trazione                ==> VARCHAR(30)   ==> NULLABLE
+potenza                 ==> SMALLINT      ==> NOT NULL
+cambio                  ==> VARCHAR(30)   ==> NOT NULL
+trazione                ==> VARCHAR(30)   ==> NOT NULL
 data-immatricolazione   ==> DATE          ==> NOT NULL
-foto                    ==> BLOB          ==> NULLABLE
+chilometri              ==> MEDIUMINT     ==> NOT NULL
+proprietari-precedenti  ==> TINYINT       ==> NULLABLE
+descrizione-e-note      ==> TEXT          ==> NULLABLE
 prezzo                  ==> SMALLINT      ==> NOT NULL
