@@ -1,0 +1,17 @@
+Tabella Auto Usate:
+
+Campi:
+
+id                      ==> BIGINT        ==> PK: NOT NULL, UNIQUE, AUTO_INCREMENT
+marca                   ==> VARCHAR(30)   ==> NOT NULL
+modello                 ==> VARCHAR(30)   ==> NOT NULL
+tipologia               ==> VARCHAR(50)   ==> NULLABLE
+colore                  ==> VARCHAR(30)   ==> NOT NULL
+alimentazione           ==> VARCHAR(10)   ==> NOT NULL
+cilindrata              ==> SMALLINT      ==> NOT NULL
+cavalli                 ==> SMALLINT      ==> NULLABLE
+cambio                  ==> VARCHAR(30)   ==> NULLABLE
+trazione                ==> VARCHAR(30)   ==> NULLABLE
+data-immatricolazione   ==> DATE          ==> NOT NULL
+foto                    ==> BLOB          ==> NULLABLE
+prezzo                  ==> SMALLINT      ==> NOT NULL
